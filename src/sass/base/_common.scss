@@ -1,0 +1,148 @@
+body {
+  // background-color: ;
+  color: var(--primary-text-color);
+  font-family: var(--primary-font), sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.79;
+
+  letter-spacing: 0.04em;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+body.maps-open {
+  overflow: hidden;
+}
+body.franchise-open {
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.upper-title {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+
+  @include mq(tablet) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.title {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #d41443;
+
+  @include mq(tablet) {
+    font-size: 48px;
+  }
+
+  @include mq(desktop) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 107px;
+  height: 44px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--red {
+  color: #ffffff;
+  background-color: #d41442;
+
+
+  transition-property: box-shadow;
+  transition-duration: var(--timing-bezier);
+  transition-timing-function: 2000ms;
+
+  &:focus,
+  &:hover {
+    box-shadow: inset 3px 3px 20px #a40329;
+
+  }
+}
+
+.btn--white {
+  color: #d41443;
+  background-color: #ffffff;
+
+  transition-property: box-shadow;
+
+  transition-duration: var(--timing-bezier);
+  transition-timing-function: var(--transition-duration);
+
+  &:focus,
+  &:hover {
+    box-shadow: inset 3px 3px 10px #da4141;
+  }
+}
+
+.btn--white:focus,
+.btn--white:hover {
+  background-color: #ecebeb;
+}
+
+.btn--hero {
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29px;
+}
+
+.scroll-hidden {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+* {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}

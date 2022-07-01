@@ -1,0 +1,89 @@
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+
+<div  data-franchise-modal class="backdrop__contacts is-hidden" >
+  <div class="modal-data">
+   
+
+    <button class="modal-data-btn" type="button" data-franchise-modal-close>
+      <svg class="modal-data__svg" width="18" height="18">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-data__title upper-title">ice cream made</p>
+    <p class="modal-data__title-logo title">with passion</p>
+    <p class="modal-data__title-text">
+      leave your details we will call you back
+    </p>
+
+    <form class="modal-data__form">
+      <div class="data-group">
+        <label class="data-group__label" for="text">Name</label>
+        <input
+          class="data-group__input"
+          type="text"
+          name="user-name"
+          id="text"
+        />
+        <svg class="data-group__svg" width="18" height="18">
+          <use href="./images/icons.svg#person"></use>
+        </svg>
+      </div>
+
+      <div class="data-group">
+        <label class="data-group__label" for="tel">Phone number </label>
+        <input class="data-group__input" type="tel" name="tel" id="tel" />
+        <svg class="data-group__svg" width="18" height="18">
+          <use href="./images/icons.svg#phone"></use>
+        </svg>
+      </div>
+
+      <div class="data-group">
+        <label class="data-group__label" for="modal-email">Email </label>
+        <input
+          class="data-group__input"
+          type="tel"
+          name="email"
+          id="modal-email"
+        />
+        <svg class="data-group__svg" width="18" height="18">
+          <use href="./images/icons.svg#email"></use>
+        </svg>
+      </div>
+
+      <div class="data-group">
+        <label class="data-group__label" for="textarea">Comment</label>
+        <textarea
+          class="data-group__input data-group__input--textarea"
+          name="coments"
+          id="textarea"
+          placeholder="input text"
+        ></textarea>
+      </div>
+
+      <div class="data-checkbox">
+        <label class="data-checkbox__label">
+          <input
+            class="data-checkbox__input"
+            type="checkbox"
+            name="checkbox"
+            value="contract"
+          />
+          <span class="data-checkbox__icon"></span>
+          I agree with the terms of the contract
+        </label>
+        <a class="data-checkbox__link" href="">Terms of an agreement</a>
+      </div>
+
+      <button class="btn btn--modal btn--red" type="submit">
+        Send
+        <svg class="modal-bt-svg" width="20" height="20">
+          <use href="./images/icons.svg#icon-send"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+  <script src="./modal.js"></script>
+</div>
+

@@ -1,0 +1,38 @@
+<section class="gallery">
+  <div class="container">
+    <picture class="gallery-img">
+      <source
+        media="(min-width:1200px)"
+        srcset="
+          ./images/gallery/gall_deskt.png    1x,
+          ./images/gallery/gall_deskt@2x.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/gallery/gall_tab.png    1x,
+          ./images/gallery/gall_tab@2x.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(max-width:767px)"
+        srcset="
+          ./images/gallery/gall_mob.png    1x,
+          ./images/gallery/gall_mob@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="gallery__img"
+        src="./images/gallery/gall_mob.png"
+        alt="Photo Gallery"
+        width="44"
+        height="44"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>

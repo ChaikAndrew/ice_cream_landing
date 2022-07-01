@@ -1,0 +1,162 @@
+.advantages {
+    padding-top: 0;
+    
+    background-color: var(--secondary-bgc);
+
+    @include mq(tablet) {
+        padding-bottom: 64px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 60px;
+    }
+
+    &__list {
+        @include mq(tablet) {
+            display: flex;
+        }    
+    }
+
+    &__item {
+
+        @media screen and (min-width:768px) and (max-width:1199px){
+            width:160px;
+        }
+
+        @include mq (desktop) {
+            width: 288px;
+        }
+    
+        &:not(:last-child) {
+            margin-bottom: 32px;
+
+            @include mq(tablet) {
+                margin-bottom: 0px;
+                margin-right: 32px;
+            }
+
+            @include mq(desktop) {
+                margin-right: 115px;
+            }
+        }
+    }
+
+    &__number {
+        display: block;
+        margin-bottom: 30px;
+    
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    
+        color: #D41443;
+
+        @include mq(tablet) {
+            margin-bottom: 13px;
+
+            font-size: 48px;
+            line-height: 1.15;
+            text-transform: none;
+        }
+
+        @include mq(desktop) {
+            margin-bottom: 16px;
+
+            font-size: 58px;
+            line-height: 1.14;
+        }
+
+        &-first {
+            &:before {
+                content: '';
+    
+                display: block;
+                margin-bottom: 16px;
+    
+                width: 33px;
+                height: 50px;
+    
+                background-image: url("../images/advantages-svg/milk.png");
+                
+                @include mq(tablet) {
+                    margin-bottom: 36px;
+                }
+
+                @include mq(desktop) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    
+        &-second {
+            &:before {
+                content: '';
+    
+                display: block;
+                margin-bottom: 16px;
+    
+                width: 50px;
+                height: 50px;
+    
+                background-image: url("../images/advantages-svg/apple.png");
+            
+                @include mq(tablet) {
+                    margin-bottom: 36px;
+                }
+
+                @include mq(desktop) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    
+        &-third {
+            &:before {
+                content: '';
+    
+                display: block;
+                margin-bottom: 16px;
+    
+                width: 44px;
+                height: 50px;
+    
+                background-image: url("../images/advantages-svg/heart.png");
+                background-size: contain;
+
+                @include mq(tablet) {
+                    margin-bottom: 36px;
+                }
+
+                @include mq(desktop) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    &__text {
+        padding-right: 50px;
+
+        font-family: var(--primary-font);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.7;
+        letter-spacing: 0em;
+       
+        @include mq(tablet) {
+            padding-right: 0;
+    
+            font-size: 14px;
+            line-height: 1.74;
+        }
+
+        @include mq(desktop) {
+            font-size: 16px;
+            line-height: 1.75;
+            letter-spacing: 0.02em;
+        }
+    }
+}
+

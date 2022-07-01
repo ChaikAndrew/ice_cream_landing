@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ice cream website" />
+    <meta property="og:title" content="ice cream website" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="ice cream website" />
+    <title>Icecream</title>
+    <!-- Slider swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="shortcut icon" href="./images/ice-cream.svg" />
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/сustomer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+      <include src="./partials/modalContacts.html"></include>
+      <include src="./partials/modalMaps.html"></include>
+    </main>
+
+    <include src="./partials/footer.html"></include>
+
+    <script type="module" src="./modal-header.js"></script>
+    <script type="module" src="./index.js"></script>
+
+    <!-- Slider swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+  </body>
+</html>

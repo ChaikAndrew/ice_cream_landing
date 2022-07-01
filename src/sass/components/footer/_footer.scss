@@ -1,0 +1,211 @@
+.footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--secondary-bgc);
+    @include mq(desktop) {
+        padding-top: 60px;
+    }
+
+
+    &__container {
+        @media screen and (min-width: 768px) {
+            padding-left: 16px;
+            padding-right: 16px;
+            max-width: 768px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    }
+
+   
+
+    &__upper-title {
+        width: 232px;
+        margin-bottom: 40px;
+        display: block;
+        white-space: pre-line;
+        text-align: start;
+        font-weight: 400;
+        @include mq (tablet) {
+            margin-bottom: 0;
+            width: 340px;
+        }
+        @include mq (desktop) {
+            width: 474px;
+            margin-bottom: 0;
+        }
+        
+    }
+
+    &__title {
+        display: block;
+        text-align: inherit;
+        margin-top: 16px;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+    }
+
+ .footer-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    @include mq(tablet) {
+        margin-bottom: 0;
+    }
+ }
+
+
+    .socials-networks {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        justify-content: end;
+        margin-bottom: 40px;
+        padding: 0;
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            color: var(--white-text-color);
+            background-color: var(--social-icon-bgc);
+            border-radius: 50%;
+            transition: var(--timing-bezier), var(--transition-duration);
+
+
+            &:focus,
+            &:hover,
+            &:active {
+                color: var(--social-icon-bgc);
+                background-color: var(--red-text-color);
+            }
+
+        }
+
+        &__link:hover,
+        &__link:focus {
+            color: var(--social-icon-bgc);
+            background-color: var(--red-text-color);
+        }
+
+        &__icon {
+            fill: currentColor;
+
+        }
+    }
+
+   
+
+
+
+        .footer-contacts__text {
+            
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.86;
+
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 1.86;
+            }
+
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 1.86;
+            }
+        }
+
+        .footer-contacts__address {
+            display: flex;
+            gap: 5px;
+            font-size: 12px;
+        }
+
+        .footer-contacts__phone {
+            font-style: normal;
+            text-decoration: none;
+            font-family: DM Sans;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.86;
+            color: var(--red-text-color);
+
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 1.86;
+            }
+
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 1.86;
+            }
+    }
+
+    
+
+
+        .footer-contect__text {
+            position: relative;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.52;
+            color: var(--grey-text-color);
+            text-align: center;
+            padding-top: 16px;
+            
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+    
+                top: 0;
+                left: 0;
+                border-top: 1px solid #E1E1E1;
+    
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 8px;
+    
+                }
+                
+                
+                
+    
+            }
+
+            
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: center;
+                padding-top: 8px;
+                line-height: 1.86;
+                letter-spacing: 0.02em;
+            }
+            
+        }
+        .footer-contect__rights {
+            display: block;
+
+        }
+    }

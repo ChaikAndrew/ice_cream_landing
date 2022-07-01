@@ -1,0 +1,188 @@
+.reviews {
+    padding-bottom: 0;
+
+    @include mq(tablet) {
+        padding-bottom: 20px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 60px;
+    }
+
+   &-container {
+    @include mq(tablet) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+}
+
+/*---- Slider swiper ----*/
+.swiper {
+    padding-bottom: 40px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+
+    font-size: 14px;
+    line-height: 20px;  
+}
+
+.swiper-pagination-bullet-active {
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../images/reviews/home.svg");
+    background-color: transparent;
+    background-size: cover;
+    border-radius: unset;
+    background-position: center;
+    
+}
+
+.review {
+    &__img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    
+        border-radius: 50%;
+    
+        @include mq(tablet) {
+            margin-bottom: 57px;
+        }
+    
+        @include mq(desktop) {
+            margin-bottom: 16px;
+        }
+    }
+
+
+    &__text-wrapper {
+        padding-top: 42px;
+        padding-bottom: 17px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 36px;
+    
+        background-color: #FAFAFA;
+    
+        @include mq(tablet) {
+            padding: 0;
+            margin-bottom: 50px;
+        }
+    
+        @include mq (tablet-only) {
+            background-color: var(--main-bgc);
+        }
+    
+        @include mq(desktop) {
+            padding: 32px 72px;
+            margin-bottom: 36px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            width: 968px;
+        }
+    }
+    
+    &__text {
+        position: relative;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 1px;
+        text-align: center;
+        z-index: 1;
+    
+        font-size: 12px;
+        line-height: 2.58;
+    
+        background: repeating-linear-gradient(#FAFAFA, #FAFAFA 30px, #E1E1E1 31px);
+    
+        transition: transform var(--transition-duration) var(--timing-bezier);
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 24px;
+        }
+
+        &::before {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+    
+            content: ' ';
+            width: 54px;
+            height: 40px;
+    
+            background-image: url("../images/reviews/quotes.svg");
+            z-index: -1;
+        }
+    
+        @include mq (tablet) {
+            width: 608px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        @include mq (tablet-only) {
+            background: repeating-linear-gradient(#FFFFFF, #FFFFFF 30px, #E1E1E1 31px);
+        }
+    
+        @include mq (desktop) {
+            width: 822px;
+        }
+    }
+    
+    &__user-data {
+        position: relative;
+        text-align: center;
+    
+        font-size: 16px;
+        line-height: 1.86;
+    
+        &::before {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translatex(-50%);
+    
+            content: ' ';
+            width: 32px;
+            height: 4px;
+    
+            background-image: url("../images/reviews/reddots.svg");
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+
+@import './components/header/header';
+@import './components/hero/hero';
+@import './components/products/products';
+@import './components/about/about';
+@import './components/advantages/advantages';
+@import './components/gallery/gallery';
+@import './components/сustomer-reviews/сustomer-reviews';
+@import './components/contacts/contacts';
+@import './components/footer/footer';

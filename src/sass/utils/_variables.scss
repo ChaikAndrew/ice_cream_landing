@@ -1,0 +1,24 @@
+:root {
+  --primary-font: DM Sans, sans-serif;
+ 
+  --primary-text-black: #000000;
+  --grey-text-color: #907E82; 
+  --white-text-color: #ffffff;
+  --red-text-color: #D41443;
+
+  --main-bgc: #ffffff;
+  --secondary-bgc: #fff5f6;
+  --social-icon-bgc: #fea5bb;
+ 
+  --accent-color: #6a2034;
+
+
+// трансформация
+  --timing-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
+
+  // --accent-color-background: ;
+
+  // --transition-duration: ;
+  // --transition-timing-function: ;
+}
